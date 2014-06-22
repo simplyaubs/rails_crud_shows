@@ -8,14 +8,6 @@
     <%= f.text_field :day %>
   </p>
   <p>
-    <%= f.submit 'Add show' %>
+    <%= f.submit 'Update show' %>
   </p>
-<% end %>
-
-<%= @shows.each do |show| %>
-<ul>
-  <li>
-    <%= link_to "#{show.name}", show_path(show) %>, <%= show.day %>
-  </li>
-</ul>
 <% end %>
