@@ -1,0 +1,21 @@
+<%= form_for @show do |f| %>
+  <p>
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.label :day %>
+    <%= f.text_field :day %>
+  </p>
+  <p>
+    <%= f.submit 'Add show' %>
+  </p>
+<% end %>
+
+<%= @shows.each do |show| %>
+<ul>
+  <li>
+    <%= show.name %>, <%= show.day %>
+  </li>
+</ul>
+<% end %>
